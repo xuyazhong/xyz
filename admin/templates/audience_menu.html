@@ -1,0 +1,21 @@
+<dl id="app-menu">
+	<dt>菜单</dt>
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=browse_by_cat">分类查看</a><dd>
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=find">搜索</a></dd>
+
+	<dt>读者推荐</dt>
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=list">所有图书</a></dd>
+	{foreach from=$audiences item=num key=audience}
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=list&audience={$audience}">{$audience}</a> <em>({$num})</em></dd>
+	{/foreach}
+	
+	<dt>馆存</dt>
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=list">所有图书</a></dd>
+	{foreach from=$statuses item=num key=status}
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=list&status={$status}">{$status}</a> <em>({$num})</em></dd>
+	{/foreach}
+	
+	<dt>帮助</dt>
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=wishlist_button">帮助列表</a></dd>
+	
+</dl>

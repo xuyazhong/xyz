@@ -1,0 +1,16 @@
+{use_macro file="Dataface_Main_Template.html"}
+
+	{fill_slot name="main_section"}
+	
+		<h1>Browse Books by Category</h1>
+
+		{foreach from=$categories item=category key=ctr}
+		{if $ctr%$per_column == 0}
+		{if $ctr>0}</ul></div>{/if}<div style="width: 25%; float: left; margin: 0; padding: 0; padding-top: 1em; "><ul>
+		{/if}
+			<li><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=list&categories={$category.id}">{$category.name}</a> <em>({$category.num})</em></li>
+		{/foreach}
+		</ul></div>
+		<div style="clear: both"/>
+	{/fill_slot}
+{/use_macro}

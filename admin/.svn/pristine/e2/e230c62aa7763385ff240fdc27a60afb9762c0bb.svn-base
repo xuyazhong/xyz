@@ -1,0 +1,21 @@
+<dl id="app-menu">
+	<dt>Menu</dt>
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=browse_by_cat">Browse By Category</a><dd>
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=find">Search Books</a></dd>
+
+	<dt>By Audience</dt>
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=list">All Books</a></dd>
+	{foreach from=$audiences item=num key=audience}
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=list&audience={$audience}">{$audience}</a> <em>({$num})</em></dd>
+	{/foreach}
+	
+	<dt>By Status</dt>
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=list">All Books</a></dd>
+	{foreach from=$statuses item=num key=status}
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=list&status={$status}">{$status}</a> <em>({$num})</em></dd>
+	{/foreach}
+	
+	<dt>Help</dt>
+	<dd><a href="{$ENV.DATAFACE_SITE_HREF}?-table=books&-action=wishlist_button">Wishlist Toolbar Button</a></dd>
+	
+</dl>

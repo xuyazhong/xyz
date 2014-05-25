@@ -1,0 +1,13 @@
+#dataface-sections-left-column{
+	display:none;
+}
+
+#app-menu dt {
+	margin-top: 15px;
+}
+
+#app-menu dd {
+	padding: 0;
+	margin:0;
+	width: 150px;
+}

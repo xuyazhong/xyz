@@ -1,0 +1,38 @@
+0.3.2
+August 4, 2011
+	
+	- Fixed some minor bugs causing Strict warnings in PHP 5.3 (could give blank
+		screen on login).
+	- Fixed the install SQL script for MySQL 5.5 and higher.  (Changed TYPE to ENGINE)
+	- Fixed install process so that it correctly redirects to install.php on first load.
+	
+
+0.3.1
+August 3, 2011
+
+	- No changes to librarian db.  Just includes latest Xataface which includes a number
+	 of critical security patches.
+	 
+0.3
+Dec. 16, 2009
+Steve Hannah <shannah@sfu.ca>
+
+	-Added wishlist toolbar button that allows administrators to add books to database easily while browsing popular book websites such as Amazon and Chapters.
+	-Changed default authentication to http to allow toolbar button permissions to work properly.
+	-Added headings to list view.
+	-Added help page for toolbar button.
+	
+
+0.1.2
+May 14, 2007
+Steve Hannah <shannah@sfu.ca>
+
+	install.php was a symlink in the distribution.  Replaced with actual fil.
+
+0.1.1
+May 10, 2007
+Steve Hannah <shannah@sfu.ca>
+
+	Small fix in installer for sites that require FTP connection to create 
+	templates_c directory.
+	

@@ -1,0 +1,24 @@
+;debug=1
+default_action=browse_by_cat
+title="Book Library Database"
+[languages]
+en=English
+;de=German
+
+[_database]
+host=localhost
+user="librarian"
+password="password"
+name="librariandb"
+
+[_tables]
+books=Books
+
+[_auth]
+auth_type=http
+users_table=users
+username_column=username
+password_column=password
+
+;[_output_cache]
+;enabled=1

@@ -1,0 +1,88 @@
+[isbn]
+widget:label = ISBN
+
+
+[copyright_year]
+widget:label = "Year"
+widget:atts:size=4
+
+[categories]
+widget:type=checkbox
+vocabulary = book_categories
+;filter=1
+visibility:list=hidden
+
+[media]
+widget:type=checkbox
+vocabulary = book_media
+
+[borrower_id]
+widget:type=select
+vocabulary=users
+visibility:list = hidden
+
+[due_date]
+widget:description = "The date that the book is due to be returned to the library"
+visibility:list = hidden
+
+
+[cover_art_url_small]
+visibility:browse=hidden
+visibility:list=hidden
+
+[cover_art_url_medium]
+;visibility:browse=hidden
+visibility:list=hidden
+
+[cover_art_url_large]
+visibility:list=hidden
+visibility:browse=hidden
+visibility:find=hidden
+
+[amazon_description]
+widget:label = Description
+visibility:list = hidden
+
+[amazon_reviews]
+visibility:list = hidden
+
+[amazon_url]
+visibility:list = hidden
+
+[amazon_refresh_timestamp]
+visibility:list = hidden
+widget:type=static
+
+[date_created]
+timestamp=insert
+widget:type = hidden
+
+
+[date_modified]
+timestamp=update
+widget:type=hidden
+visibility:list=hidden
+
+[created_by]
+widget:type=hidden
+visibility:list=hidden
+
+[modified_by]
+widget:type=hidden
+visibility:list=hidden
+
+[notes]
+visibility:list=hidden
+
+[status]
+	filter=1
+	
+[audience]
+	filter=1
+
+[info_url]
+	visibility:list=hidden
+[thumbnail_url]
+	visibility:list=hidden
+[reference_url]
+	visibility:list=hidden
